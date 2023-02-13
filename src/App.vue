@@ -5,7 +5,6 @@
 
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
@@ -19,13 +18,13 @@ import HelloWorld from './components/HelloWorld.vue'
   color: #2c3e50;
   margin-top: 60px;
 }
-
 .card{
   border-radius: 24px;
   border: 3px solid #041E42;
   padding: 8px;
   width: 400px;
-  display: inline-block;
+  display: block;
+  margin: auto;
   position: relative;
   overflow: hidden;
   box-shadow: 0px 8px 24px #999;
@@ -33,21 +32,18 @@ import HelloWorld from './components/HelloWorld.vue'
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.details{
+.textbox{
   font-size: 15px;
   margin-left: 112px;
   text-align: right;
   border-radius: 24px;
 }
-
 .description{
   text-shadow: -1px 1px 2px #FFFFFF,
 				  1px 1px 2px #FFFFFF,
 				  1px -1px 0 #FFFFFF,
 				  -1px -1px 0 #FFFFFF;
 }
-
 .haxbtn{
   display:inline-block;
   text-align: center;
@@ -59,25 +55,22 @@ import HelloWorld from './components/HelloWorld.vue'
   height: 32px;
   box-shadow: 0px 10px 24px #999;
   border: 1px solid #041E42;
-  visibility: hidden;
+  visibility: visible;
   padding-top: 10px;
   margin-right: 32px;
 }
-
 .haxbtn:hover{
   color: #e0e0e0;
   background-color: #07377a;
   box-shadow: 0px 10px 24px white;
   border: 1px solid #07377a;
 }
-
 .haxbtn:focus{
   color: #e0e0e0;
   background-color: #07377a;
   box-shadow: 0px 10px 24px white;
   border: 1px solid #07377a;
 }
-
 .title{
   color: white;
   font-size: 24px;
@@ -86,14 +79,12 @@ import HelloWorld from './components/HelloWorld.vue'
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
 }
-
 .Image{
   width: 200px;
   border-radius: 24px;
   box-shadow: 0px 10px 24px #999;
   float: left;
 }
-
 .outsideBtn{
   color: white;
   background-color: #041E42;
@@ -104,31 +95,27 @@ import HelloWorld from './components/HelloWorld.vue'
   box-shadow: 0px 10px 24px #999;
   border: 1px solid #041E42;
   margin-right: 32px;
-  margin-bottom: 10px;
-  display: none;
+  margin-bottom: 16px;
+  display: inline-block;
 }
-
 .outsideBtn:hover{
   color: #e0e0e0;
   background-color: #07377a;
   box-shadow: 0px 10px 24px white;
   border: 1px solid #07377a;
 }
-
 .outsideBtn:focus{
   color: #e0e0e0;
   background-color: #07377a;
   box-shadow: 0px 10px 24px white;
   border: 1px solid #07377a;
 }
-
 .basic{
   background-color: hotpink;
 }
-
-/* change the resolution so the buttons show up on the size we put on W2 */
-
+.hoverCard{
+  border: 3px solid purple;
+  box-shadow: 0px 8px 24px yellow;
+}
 input:checked + label + .description { display:none; }
-
-
 </style>

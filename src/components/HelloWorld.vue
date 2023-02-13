@@ -1,6 +1,7 @@
 <template>
   <h1>{{ msg }}</h1>
 
+<!-- My custom code -->
 <button class="outsideBtn" v-on:click="duplicate">Duplicate</button>
 <button class="outsideBtn" v-on:click="background">Background</button>
 <button class="outsideBtn" v-on:click="heading">Heading</button>
@@ -11,14 +12,15 @@
 
   <img class="Image" src="https://i.redd.it/zckxgrywjpk61.jpg" alt="Baljeet">
   
-<div class="details">
+<div class="textbox">
   <details>
     <summary class="haxbtn">Details</summary>
-    <p class="description pScale">Baljeet is here to fix all of your IT problems</p>
+    <p class="description pScale">Baljeet is here to solve all your IT problems</p>
   </details>
 
   </div>
 </div>
+
 
   <p>
     <a href="https://vitejs.dev/guide/features.html" target="_blank">
@@ -37,11 +39,9 @@
 
 <script setup>
 import { defineProps, reactive } from 'vue'
-
 defineProps({
   msg: String
 })
-
 const state = reactive({ count: 0 })
 </script>
 
@@ -88,7 +88,7 @@ export default {
         }
       });
     },
-    //Kinda borked rn
+
     deleter(){
       document.querySelector(".card:last-child").remove();
       console.log(card);
